@@ -1,6 +1,6 @@
 class Particle {
   constructor() {
-    this.position = createVector(random(windowWidth), windowHeight);
+    this.position = createVector(random(width), height);
     this.diameter = 20;
     this.acceleration = createVector();
     this.velocity = createVector(0, random(-35, -50));

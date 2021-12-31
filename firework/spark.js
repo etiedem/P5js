@@ -28,8 +28,8 @@ class Spark {
     this.acceleration.mult(0);
     this.lifetime -= 6;
     if (
-      this.position.y >= windowHeight ||
-      this.position.x > windowWidth ||
+      this.position.y >= height ||
+      this.position.x > width ||
       this.position.x < 0
     ) {
       this.offscreen = true;
