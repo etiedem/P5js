@@ -1,7 +1,7 @@
 class Particle {
   constructor() {
     this.position = createVector(random(windowWidth), windowHeight);
-    this.radius = 20;
+    this.diameter = 20;
     this.acceleration = createVector();
     this.velocity = createVector(0, random(-35, -50));
     this.gravity = createVector(0, 1);
@@ -14,7 +14,7 @@ class Particle {
     if (this.velocity.y < 0) {
       noStroke();
       fill(this.c);
-      ellipse(this.position.x, this.position.y, this.radius);
+      ellipse(this.position.x, this.position.y, this.diameter);
     } else {
       for (let i = this.sparks.length - 1; i >= 0; i--) {
         this.sparks[i].update();
